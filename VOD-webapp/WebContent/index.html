@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/boostrap.css">
     <!-- Font Awesome styles (icons) -->
     <link rel="stylesheet" href="css/font_awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/docs.theme.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,18 +41,27 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <div class="container">      
-      
-      <div ng-view></div>
+    <div class="container">  
+    	<hr>    
+      	<div class="owl-carousel">		    
+		</div>
+		<video style="display: none;" controls src="http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved_ST.webm" id="myvideo">
+        </video>
+        <hr>
+		<div ng-view></div>
       
     </div>
 
 	<!-- Scripts queries -->
 	<script src="lib/jquery.js"></script>
     <script src="lib/boostrap.min.js"></script>
-    <script src="lib/owl-carousel.js"></script>
+    <script src="lib/owl.carousel.min.js"></script>
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular-owl-carousel.js"></script>
+    
+    <!-- carousel service -->
+    <script src="app/module/home/js/vodCarousel.js"></script>
     
     <!-- Angular scripts -->
     <script src="app/common/main/js/main.js"></script>

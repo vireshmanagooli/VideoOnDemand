@@ -1,3 +1,4 @@
 var mainApp = angular.module('mainApp', [  
-  'mainRoute'  
+  'mainRoute',
+  'angular-owl-carousel'
 ]);

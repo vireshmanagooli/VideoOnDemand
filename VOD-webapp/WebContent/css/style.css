@@ -5,3 +5,31 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+video { max-height: 240px; }
+
+/* Reset max-height when in full screen mode */
+video:-webkit-full-screen	{ max-height: 100%; }
+video:-moz-full-screen		{ max-height: 100%; }
+
+.item{
+  background: black;
+  padding: 10px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.center{
+	border: dotted;    
+}
+
+.card{	
+	text-align: center;
+	background: black;
+  	padding: 10px 0px;
+  	color: #FFF;
+}
