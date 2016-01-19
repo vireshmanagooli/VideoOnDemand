@@ -1,31 +1,16 @@
 <div>
 	<h1>History</h1>
 	<hr>
-	<div class="row">
-		<div class="col-sm-3">
-			<div class="card">
-			  <img class="card-img-top" src="http://lorempixel.com/214/317/?t=1" alt="Card image cap">
-			  <span>Title</span>
+	<div class="row" id="historyList">
+		<div ng-repeat="item in history.movies track by $index">
+			<div class="col-sm-3">
+				<div class="card">
+				  <img class="card-img-top" ng-src="{{item.img}}" ng-attr-title="{{item.title}}" alt="{{item.title}}">
+				  <span>{{item.title}}</span>
+				</div>
 			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="card">
-			  <img class="card-img-top" src="http://lorempixel.com/214/317/?t=1" alt="Card image cap">
-			  <span>Title</span>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="card">
-			  <img class="card-img-top" src="http://lorempixel.com/214/317/?t=1" alt="Card image cap">
-			  <span>Title</span>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="card">
-			  <img class="card-img-top" src="http://lorempixel.com/214/317/?t=1" alt="Card image cap">
-			  <span>Title</span>
-			</div>
-		</div>
+			<hr ng-if="history.showGap($index)">
+		</div>				
 	</div>
 	<hr>
 </div>

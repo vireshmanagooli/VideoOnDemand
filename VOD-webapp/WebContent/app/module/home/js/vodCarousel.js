@@ -84,8 +84,19 @@ $(document)
 						    
 						    $.post("http://localhost:1337/history/createOrUpdate", history)
 						    .done(function(data) {
-						    	 // Store
-							    localStorage.setItem("clientId", data.clientId);
+						    	if(data.status === 'success'){						    		
+						    		// Store
+						    		localStorage.setItem("clientId", data.results.id);
+						    		//check whether History is already opened.
+						    		if(window.location.href.indexOf("history") > -1){
+						    			//append the latest movie to history list
+						    			$("#historyList").append("<div class='col-sm-3'>"+
+										"<div class='card'>"+
+										  "<img class='card-img-top' src='"+img+"' title='"+title+"' alt='"+title+"'>"+
+										  "<span>"+title+"</span>" + 
+										"</div></div>");
+						    		}						    		
+						    	}						    	
 						    });
 						} 
 					}
