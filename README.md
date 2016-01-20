@@ -1,6 +1,7 @@
 # VideoOnDemand
 
 This application is built on MEAN stack. Technology and library used are as follows.
+
 1. Node.js
 2. Express.js
 3. Sails.js
@@ -13,6 +14,7 @@ This application is built on MEAN stack. Technology and library used are as foll
 You can find the working example in the link - http://ec2-54-179-132-117.ap-southeast-1.compute.amazonaws.com/
  
 ## Application Features
+
 1.	Application should display a list of videos in a horizontal carousel on the home page which can be scrollable.
 2.	User should be able to select a video to play in full screen.
 3.	When the video is finished, the application should go back to the previous page.
@@ -47,9 +49,9 @@ Bind the key events to capture it. Based on the key stroke, we can scroll the co
 1. Install the node server. Follow the steps - https://docs.npmjs.com/getting-started/installing-node
 2. Install sails.js. Follow the steps - http://sailsjs.org/get-started
 3. Copy the "VOD-node" into desired folder and execute the following command to install the dependencies. 
-  npm install
+ **npm install**
 4. After successfull installation, execute the following command to start the server.
-  sails lift
+ **sails lift**
 
 ### Database
 1. Install the mongoDB. follow the steps - https://docs.mongodb.org/manual/installation/
