@@ -5,9 +5,5 @@ mainApp.config(['$routeProvider', '$locationProvider',
       when('/history', {
         templateUrl: 'app/module/history/html/history.html',
         controller: 'historyController'
-      }).      
-      otherwise({
-        templateUrl: 'app/module/home/html/home.html',
-        controller: 'homeController'
-     });
+      });
 }]);
