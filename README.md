@@ -11,7 +11,6 @@ This application is built on MEAN stack. Technology and library used are as foll
 6. MongoDB
 7. HTML5 and CSS3
 
-You can find the working example in the link - http://ec2-54-179-132-117.ap-southeast-1.compute.amazonaws.com/
  
 ## Application Features
 
